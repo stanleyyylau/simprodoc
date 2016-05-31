@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "1元特购网站操作手册"
+date:   2016-05-31 09:34:02 +0800
+categories: jekyll update
+---
+
+## 目前存在的问题:
+
+- 头像无法编辑
+* 地址无法选择，
++ “晒单分享”无法跳转到下一页
++ 购物车无法选择单品购买
++ 首页 立即参与 立即预约 无法打开
++ Banner无链接
++ 首页底部点击下载移动客户端之后二维码不对
++ 首页底部关注官方微信，二维码不对
++ 底部合作专区的内容要修改 大概文件位置  `statics/templates/yungou/html`
++ 女性健康栏目 鼠标滑倒底部一直逗
+
+## 操作指南
+
+网站底部 新手指南 特购保障 商品配送 特购基金 里面内容的修  打字即可
+答案：后台 内容管理 文章管理 文章列表和文章分类
+
+首页底部 特购qq群页面，模版修改 html 文件
+答案：后台 单页管理 单页列表
+
+圈子管理
+内容管理－模块管理-圈子模块
+
+如何添加友情链接？
+内容管理-模块管理－友情链接
+
+
+
+## 没弄懂
+内容管理--附件管理
+内容管理--栏目管理
+内容管理－模块管理-广告模块
+内容管理- 模块管理-投票模块
+
+
+
+
+### 官方说明文件
+
+```
+修改配置文件要用notepad++或Dreamweaver或其它编程软件，不能用记事本打开修改。
+
+程序只支持php5.2.17或5.3版本，最好的是php5.2.17，php.ini要支持以下：
+extension=php_curl.dll
+extension=php_openssl.dll
+
+安装说明：
+1、源码上传至服务器空间
+2、修改数据库配置文件：域名\system\config\database.inc.php/ 
+3、导入数据库文件：yungou.sql
+
+
+如果你的数据库限制了导入大小，可以把它压缩为.zip格式的压缩包再导入
+
+
+
+网站后台地址：域名/?/admin/  帐号:admin  密码：admin888
+
+手机版绑定：再解析个二级域名，如m.xxxx.com格式的，
+解析好绑定服务器，然后在后台模块域名里修改为你的手机域名
+
+手机版导航图标里的链接修改路径和网站公告修改路径 
+statics/templates/yungou/html/mobile/index.index.html
+
+
+机器人自动开始购买指定页：域名/?/go/shua/shua
+
+
+QQ登录的回调地址是：
+http://域名/api/qqlogin/callback/
+例如：
+http://www.subao365.com/api/qqlogin/callback/
+
+-----*------*-----*------
+短信宝地址：http://www.smsbao.com/
+云支付地址：http://jm.i2e.cn/
+QQ免费域名邮箱地址：http://exmail.qq.com/onlinesell/intro
+
+```
