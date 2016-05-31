@@ -15,7 +15,7 @@ categories: jekyll update
 + 银行对公账户
 
 
-申请地址：https://b.alipay.com/order/productDetail.htm?productId=2015110218012942
+[申请地址](https://b.alipay.com/order/productDetail.htm?productId=2015110218012942)
 申请完之后提供以下接口给我们做开发整合
 
 + 支付宝商户号：
@@ -27,7 +27,7 @@ categories: jekyll update
 到微信官网申请一个微信商户号，提供下列资料给我们
 微信扫码支付：（需先申请公众号）
 
-申请地址：http://kf.qq.com/faq/120911VrYVrA150906yUZze6.html 
+[申请地址](http://kf.qq.com/faq/120911VrYVrA150906yUZze6.html) 
 申请好了之后提供下面资料给我们做开发
 
 + 微信支付商户号：
